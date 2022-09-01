@@ -10,7 +10,7 @@
     <h1>
         <span>{{ $post->title }}</span>
         <a href="{{ route('posts.edit', $post) }}">[Edit]</a>
-        <form method="post" actions="{{ route('posts.destroy', $post) }}" id="delete_post">
+        <form method="post" action="{{ route('posts.destroy', $post) }}" id="delete_post">
             @method('DELETE')
             @csrf
 
