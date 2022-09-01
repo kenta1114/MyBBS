@@ -35,6 +35,6 @@ Route::patch('/posts/{post}/update',[PostController::class,'update'])
     ->name('posts.update')
     ->where('post','[0-9]+');
 
-Route::patch('/posts/{post}/destroy',[PostController::class,'destroy'])
+Route::delete('/posts/{post}/destroy',[PostController::class,'destroy'])
     ->name('posts.destroy')
     ->where('post','[0-9]+');
